@@ -1,0 +1,41 @@
+.carousel{
+    margin-top: 20px;
+    height: 600px;
+    width: 100vw;
+}
+.carouselInner{
+    width: 100%;
+    height: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+.arrow-icon{
+    font-size: 55px;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(156, 155, 155, 0.103);
+    border-radius: 50%;
+}
+.arrow-icon:hover{
+    color: var(--brandColor);
+    transform: scale(1.2);
+}
+.carouselInner .left{
+    width: 5%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.carouselInner .center{
+    width: 90%;
+    height: 100%;
+}
+.carouselInner .right{
+    width: 5%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}

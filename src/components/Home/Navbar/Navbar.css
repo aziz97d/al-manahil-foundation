@@ -1,0 +1,101 @@
+*{
+    --brandColor : #72A230;
+    --brandSecondary: #fff;
+    transition: all 0.3s ease;
+}
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-container{
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+.navbar .navbar-top{
+    width: 90vw;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--brandColor);
+    align-items: center;
+    
+}
+.navbar-top .nav-item{
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 500;
+    border-right: var(--brandSecondary) 2px solid;
+    color: var(--brandSecondary);
+}
+.navbar-top .nav-item.social-icon{
+    font-size: 25px;
+}
+.navbar-top .nav-item:last-child{
+    border-right: none;
+}
+
+.navbar-middle{
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    height: 100px;
+    align-items: center;
+}
+.navbar-middle .logo img{
+    height: 80px;
+}
+
+.navbar-middle .contact-us {
+    display: flex;
+}
+.navbar-middle .contact-us .contact-us-item{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 30px;
+}
+.navbar-middle .contact-us .contact-us-item .item-top{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 18;
+}
+.navbar-middle .contact-us .contact-us-item .item-top .icon{
+    color: var(--brandColor);
+    font-size: 25px;
+}
+.navbar-middle .contact-us .contact-us-item .item-bottom{
+    font-size: 12px;
+}
+.nav-bottom{
+    background-color: #FCFCFC;
+    height: 50px;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-bottom ul{
+    display: flex;
+    list-style: none;
+    
+}
+.nav-bottom .nav-item{
+    padding: 5px 15px;
+    text-decoration: none;
+    color: var(--brandColor);
+}
+.nav-bottom .nav-item:hover{
+    background-color: var(--brandColor);
+    color: var(--brandSecondary);
+}
+
+.nav-bottom .nav-item.nav-button{
+    background-color: var(--brandColor);
+    margin: 5px;
+    color: white;
+}
