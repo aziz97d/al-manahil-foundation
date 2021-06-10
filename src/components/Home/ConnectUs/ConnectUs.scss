@@ -1,0 +1,71 @@
+@mixin container {
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+.connect-us {
+    margin-top: -80px;
+    width: 80vw;
+    @include container;
+
+    .top{
+        display: flex;
+        justify-content: center;
+    }
+    .bottom{
+        display: flex;
+        height: 400px;
+        width: 100%;
+        .fund{
+            width: 25%;
+            padding: 15px 0;
+            text-align: left;
+            
+            h5{
+                font-size: 25px;
+                font-weight: 350;
+                margin: 10px 0; 
+            }
+            p{
+                margin-bottom: 15px;
+                color: gray;
+                font-weight: 300;
+            }
+            .brand-btn{
+                padding: 5px 15px;
+                background-color: #72A230;
+                border-radius: 5px;
+                text-decoration: none;
+                color:white;
+                font-size: 15px;
+                font-weight: 400;
+            }
+
+        }
+        .our-causes{
+            width: 75%;
+            display: flex;
+            flex: 1;
+            padding: 15px 0;
+            .cause{
+                margin-left: 25px;
+                text-align: left;
+                img{
+                    margin: 10px 0;
+                    width: 100%;
+                }
+                .title{
+                    border-bottom: 2px solid red;
+                    padding: 10px 0;
+                    &::after{
+                        content: "";
+                        border-bottom: 2px solid green;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+

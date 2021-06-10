@@ -6,7 +6,7 @@ import {
     Link
 } from "react-router-dom";
 import { AiFillFacebook, AiFillTwitterSquare, AiFillInstagram, AiFillYoutube, AiFillLinkedin } from "react-icons/ai";
-import './Navbar.css'
+import './Navbar.scss'
 import { IoMailOutline, IoLocationOutline, IoCallOutline } from "react-icons/io5";
 
 function Navbar() {
