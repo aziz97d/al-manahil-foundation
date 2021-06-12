@@ -1,0 +1,12 @@
+.carousel-item{
+    height: 350px;
+    margin: 30px;
+    display: flex;
+    img{
+        height: 100%;
+    }
+    .details{
+        padding: 20px;
+        text-align: left;
+    }
+}

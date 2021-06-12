@@ -1,71 +1,99 @@
+@mixin brandDescriptionTwo {
+    color: gray;
+    font-weight: 300;
+    font-size: 17px;
+}
+
 @mixin container {
     padding-left: 10vw;
     padding-right: 10vw;
+}
+.brandDescriptionOne {
+    color: gray;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 30px;
+}
+.brand-btn {
+    padding: 5px 15px;
+    background-color: #72a230;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
 }
 .connect-us {
     margin-top: -80px;
     width: 80vw;
     @include container;
 
-    .top{
+    .top {
         display: flex;
         justify-content: center;
     }
-    .bottom{
+    .bottom {
         display: flex;
         height: 400px;
         width: 100%;
-        .fund{
+        .fund {
             width: 25%;
             padding: 15px 0;
             text-align: left;
-            
-            h5{
+            h5 {
                 font-size: 25px;
                 font-weight: 350;
-                margin: 10px 0; 
+                margin: 10px 0;
             }
-            p{
+            p {
                 margin-bottom: 15px;
-                color: gray;
-                font-weight: 300;
+                margin-right: 30px;
             }
-            .brand-btn{
-                padding: 5px 15px;
-                background-color: #72A230;
-                border-radius: 5px;
-                text-decoration: none;
-                color:white;
-                font-size: 15px;
-                font-weight: 400;
-            }
-
         }
-        .our-causes{
+        .our-causes {
             width: 75%;
             display: flex;
             flex: 1;
             padding: 15px 0;
-            .cause{
+
+            .cause {
                 margin-left: 25px;
                 text-align: left;
-                img{
+                img {
                     margin: 10px 0;
                     width: 100%;
                 }
-                .title{
-                    border-bottom: 2px solid red;
-                    padding: 10px 0;
-                    &::after{
+                .title {
+                    border-bottom: 3px solid rgba(128, 128, 128, 0.301);
+                    padding: 5px 0;
+                    position: relative;
+                    font-size: 18px;
+                    &::before {
                         content: "";
-                        border-bottom: 2px solid green;
+                        display: block;
+                        width: 40%;
+                        height: 3px;
+                        background-color: #478500;
+                        z-index: 10;
+                        position: absolute;
+                        bottom: -3px;
+                    }
+                }
+
+                p {
+                    margin: 10px 0;
+                    color: gray;
+                    @include brandDescriptionTwo;
+                }
+                a {
+                    text-decoration: none;
+                    color: grey;
+                    &:hover {
+                        color: #478500;
                     }
                 }
             }
         }
-
     }
 }
-
-
-
