@@ -26,7 +26,7 @@ function FeatureCauses() {
                     Become a
                     Volunteer?
                 </h5>
-                <p className="brandDescriptionOne">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem temporibus quisquam voluptas natus, provident porro et odio perferendis ipsam, amet sint</p>
+                <p className="brandDescriptionTwo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem temporibus quisquam voluptas natus, provident porro et odio perferendis ipsam, amet sint</p>
                 <Link className="brand-btn">Sign Up Today!</Link>
             </div>
             <div className="causes">

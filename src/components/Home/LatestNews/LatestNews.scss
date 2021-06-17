@@ -1,0 +1,52 @@
+.latest-news{
+    width: 80vw;
+    height: 600px;
+    padding: 10vh 10vw;
+    .heading{
+        display: flex;
+
+        .causes-title{
+            width: 30%;
+            text-align: left;
+            h1{
+                font-weight: 400;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+        }
+        .causes-description{
+            width: 70%;
+
+            p{
+                font-size: 20px;
+                text-align: right;
+            }
+        }
+    }
+
+    .news-list{
+        display: flex;
+        margin-top: 50px;
+        justify-content: space-between;
+        .news-card{
+            width: 350px;
+            background-color: #F7F7F7;
+            img{
+                width: 100%;
+            }
+            .details{
+                padding: 30px;
+                text-align: left;
+                .amount{
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 15px 0;
+                    font-weight: 400;
+                    font-size: 18px;
+                }
+            }
+            
+        }
+    }
+
+}

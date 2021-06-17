@@ -7,8 +7,9 @@ function FeatureCausesItem(props) {
             <img src={image} />
             <div className="details">
                 <h6>Feature Causes</h6>
-                <h4>{title}</h4>
-                <p>{description}</p>
+                <h4 className="title">{title}</h4>
+                <p className="brandDescriptionTwo">{description}</p>
+                <div><p>Raised : {raised}</p> <p>Goals : {goal}</p></div>
             </div>
         </div>
     )

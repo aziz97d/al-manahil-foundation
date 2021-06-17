@@ -25,21 +25,21 @@ function ConnectUs() {
                     <div className="cause">
                         <img src="http://html.kodesolution.live/html/nonprofit/charity/charitypress-html/v3.1/demo/images/photos/2.jpg" />
                         <h5 className="title"> Adopt With Us</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ipsa ullam dicta suscipit ipsum porro molestias cum nihil quasi culpa.</p>
+                        <p className="brandDescriptionTwo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ipsa ullam dicta suscipit ipsum porro molestias cum nihil quasi culpa.</p>
                         <Link>Read more &#187;</Link>
                     </div>
                     
                     <div className="cause">
                         <img src="http://html.kodesolution.live/html/nonprofit/charity/charitypress-html/v3.1/demo/images/photos/1.jpg" />
                         <h5 className="title"> In the Spotlight</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ipsa ullam dicta suscipit ipsum porro molestias cum nihil quasi culpa.</p>
+                        <p className="brandDescriptionTwo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ipsa ullam dicta suscipit ipsum porro molestias cum nihil quasi culpa.</p>
                         <Link>Read more &#187;</Link>
                     </div>
                     
                     <div className="cause">
                         <img src="http://html.kodesolution.live/html/nonprofit/charity/charitypress-html/v3.1/demo/images/photos/3.jpg" />
                         <h5 className="title"> We The Volunteers</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ipsa ullam dicta suscipit ipsum porro molestias cum nihil quasi culpa.</p>
+                        <p className="brandDescriptionTwo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ipsa ullam dicta suscipit ipsum porro molestias cum nihil quasi culpa.</p>
                         <Link>Read more &#187;</Link>
                     </div>
                     

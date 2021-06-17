@@ -4,14 +4,14 @@ import './ConnectUsItem.scss'
 import { GiSelfLove, GiLoveLetter, GiClover, GiFirstAidKit } from "react-icons/gi";
 import { Link } from 'react-router-dom';
 function ConnectUsItem(props) {
-    const {title, description, icon, buttonTitle} = props.data;
-    
-    const setIcon = (iconName) =>{
-        switch(iconName){
-            case "GiLoveLetter" : return <GiLoveLetter  className="icon" />
-            case "GiClover" : return <GiClover  className="icon" />
-            case "GiFirstAidKit" : return <GiFirstAidKit  className="icon" />
-            default : return <GiSelfLove  className="icon" />
+    const { title, description, icon, buttonTitle } = props.data;
+
+    const setIcon = (iconName) => {
+        switch (iconName) {
+            case "GiLoveLetter": return <GiLoveLetter className="icon" />
+            case "GiClover": return <GiClover className="icon" />
+            case "GiFirstAidKit": return <GiFirstAidKit className="icon" />
+            default: return <GiSelfLove className="icon" />
         }
     }
     return (
@@ -25,5 +25,4 @@ function ConnectUsItem(props) {
         </div>
     )
 }
-
 export default ConnectUsItem
