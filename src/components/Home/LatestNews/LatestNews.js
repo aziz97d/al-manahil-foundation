@@ -1,7 +1,8 @@
 import React from 'react'
 import './LatestNews.scss'
-
+import { AiOutlineLike,AiOutlineComment } from "react-icons/ai";
 import { Link } from 'react-router-dom'
+
 function LatestNews() {
     return (
         <div className="latest-news">
@@ -18,14 +19,67 @@ function LatestNews() {
                 <div className="news-card">
                     <img src="http://html.kodesolution.live/html/nonprofit/charity/charitypress-html/v3.1/demo/images/project/1.jpg" alt="" />
                     <div className="details">
-                        <h4>Sponsor a child</h4>
-                        <p className="brandDescriptionTwo">Lorem ipsum dolor sit amet, consectetur adipisici elit. Illo, laudantium, accusantium impedit magnam nobis</p>
-                        <div className="amount">
-                            <p>Raised : $500</p>
-                            <p>Goals : $700</p>
+                        <div className="top">
+                            <div className="date">
+                                <p>28</p>
+                                <p>FEB</p>
+                            </div>
+                            <div className="news-info">
+                                <p>Post Title</p>
+                                <div className="activity">
+                                    <p><span> <AiOutlineComment />  </span>214 Comments</p>
+                                    <p><span> <AiOutlineLike/> </span>214 Likes</p>
+                                </div>
+                            </div>
                         </div>
-                        <Link className="brand-btn">Donate Now</Link>
-                        
+                        <div className="bottom">
+                            <p className="brandDescriptionTwo">Lorem ipsum dolor sit amet, consectetur adipisici elit. Illo, laudantium, accusantium impedit magnam nobis</p>
+                            <Link>Read More </Link>
+                        </div>
+                    </div>
+                </div>
+                <div className="news-card">
+                    <img src="http://html.kodesolution.live/html/nonprofit/charity/charitypress-html/v3.1/demo/images/project/1.jpg" alt="" />
+                    <div className="details">
+                        <div className="top">
+                            <div className="date">
+                                <p>28</p>
+                                <p>FEB</p>
+                            </div>
+                            <div className="news-info">
+                                <p>Post Title</p>
+                                <div className="activity">
+                                    <p><span> <AiOutlineComment />  </span>214 Comments</p>
+                                    <p><span> <AiOutlineLike/> </span>214 Likes</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="bottom">
+                            <p className="brandDescriptionTwo">Lorem ipsum dolor sit amet, consectetur adipisici elit. Illo, laudantium, accusantium impedit magnam nobis</p>
+                            <Link>Read More </Link>
+                        </div>
+                    </div>
+                </div>
+                <div className="news-card">
+                    <img src="http://html.kodesolution.live/html/nonprofit/charity/charitypress-html/v3.1/demo/images/project/1.jpg" alt="" />
+                    <div className="details">
+                        <div className="top">
+                            <div className="date">
+                                <p>28</p>
+                                <p>FEB</p>
+                            </div>
+                            <div className="news-info">
+                                <p>Post Title</p>
+                                <div className="activity">
+                                    <p><span> <AiOutlineComment />  </span>214 Comments</p>
+                                    <p><span> <AiOutlineLike/> </span>214 Likes</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="bottom">
+                            <p className="brandDescriptionTwo">Lorem ipsum dolor sit amet, consectetur adipisici elit. Illo, laudantium, accusantium impedit magnam nobis</p>
+                            <Link>Read More </Link>
+                        </div>
                     </div>
                 </div>
             </div>

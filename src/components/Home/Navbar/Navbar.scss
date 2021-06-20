@@ -1,17 +1,19 @@
+$brandColor: #72a230;
+$brandSecondary: #fff;
 
-    $brandColor : #72A230;
-    $brandSecondary: #fff;
-    
 @mixin container {
     padding-left: 10vw;
     padding-right: 10vw;
 }
-.navbar{
+.scrolled {
+    position: fixed;
+    top: 0;
+}
+.navbar {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    .navbar-top{
+    .navbar-top {
         @include container;
         width: 80vw;
         height: 50px;
@@ -20,7 +22,7 @@
         background-color: $brandColor;
         align-items: center;
 
-        .navbar-top .nav-item{
+        .navbar-top .nav-item {
             text-decoration: none;
             padding: 0 10px;
             font-size: 18px;
@@ -28,7 +30,7 @@
             border-right: $brandSecondary 2px solid;
             color: $brandSecondary;
         }
-        .nav-item{
+        .nav-item {
             text-decoration: none;
             padding: 0 10px;
             font-size: 18px;
@@ -36,18 +38,16 @@
             border-right: $brandSecondary 2px solid;
             color: $brandSecondary;
 
-            .social-icon{
+            .social-icon {
                 font-size: 25px;
             }
-            &:last-child{
+            &:last-child {
                 border-right: none;
             }
-        }  
-        
-            
+        }
     }
 
-    .navbar-middle{
+    .navbar-middle {
         @include container;
         display: flex;
         justify-content: space-between;
@@ -55,71 +55,69 @@
         height: 100px;
         align-items: center;
 
-        .logo img{
+        .logo img {
             height: 80px;
         }
         .contact-us {
             display: flex;
-            .contact-us-item{
+            .contact-us-item {
                 padding: 5px;
                 display: flex;
                 flex-direction: column;
                 align-items: flex-end;
                 margin-left: 30px;
-    
-                .item-top{
+
+                .item-top {
                     display: flex;
                     align-items: center;
                     font-weight: 500;
                     font-size: 18;
-    
-                    .icon{
+
+                    .icon {
                         color: $brandColor;
                         font-size: 25px;
                     }
                 }
-                .item-bottom{
+                .item-bottom {
                     font-size: 12px;
                 }
             }
         }
     }
-    
-    .nav-bottom{
-        background-color: #FCFCFC;
-        height: 50px;
+
+    .nav-bottom {
+        background-color: #f0f0f0;
+        height: 60px;
         width: 80vw;
         @include container;
         display: flex;
         align-items: center;
         justify-content: space-between;
-
-        ul{
+        z-index: 1000;
+        ul {
             display: flex;
             list-style: none;
         }
-        .nav-item{
+        .nav-item {
             padding: 5px 15px;
             text-decoration: none;
             color: $brandColor;
 
-            &:hover{
+            &:hover {
                 background-color: $brandColor;
                 color: $brandSecondary;
             }
         }
-        .nav-item.nav-button{
+        .nav-item.nav-button {
             background-color: $brandColor;
             margin: 5px;
             color: white;
         }
     }
-    
 }
 
-
-// .nav-bottom 
-// .nav-bottom 
+// .nav-bottom
+// .nav-bottom
 // .nav-bottom .nav-item
 
-// .nav-bottom 
+// .nav-bottom

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import {
     BrowserRouter as Router,
     Switch,
@@ -10,6 +10,23 @@ import './Navbar.scss'
 import { IoMailOutline, IoLocationOutline, IoCallOutline } from "react-icons/io5";
 
 function Navbar() {
+    const [scrolled, setScrolled] = useState(false);
+    let navbarClasses = ['nav-bottom nav-container'];
+    if (scrolled) {
+        navbarClasses.push('scrolled');
+    }
+    const handleScroll = () => {
+        const offset = window.scrollY;
+        if (offset > 200) {
+            setScrolled(true);
+        }
+        else {
+            setScrolled(false);
+        }
+    }
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll)
+    })
     return (
 
         <div className="navbar">
@@ -52,7 +69,7 @@ function Navbar() {
                     </div>
                 </div>
             </div>
-            <div className="nav-bottom nav-container">
+            <div className={navbarClasses.join(" ")}>
                 <ul>
                     <li><Link className="nav-item">Home</Link></li>
                     <li><Link className="nav-item">Features</Link></li>
