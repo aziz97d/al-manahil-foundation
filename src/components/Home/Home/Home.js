@@ -5,6 +5,7 @@ import Header from '../Header/Header'
 import LatestCauses from '../LatestCauses/LatestCauses'
 import LatestNews from '../LatestNews/LatestNews'
 import OurProgress from '../OurProgress/OurProgress'
+import OurPartner from '../OurPartner/OurPartner'
 
 function Home() {
     return (
@@ -15,6 +16,7 @@ function Home() {
             <LatestCauses></LatestCauses>
             <OurProgress></OurProgress>
             <LatestNews></LatestNews>
+            <OurPartner></OurPartner>
         </div>
     )
 }
